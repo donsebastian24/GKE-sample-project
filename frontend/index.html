@@ -2,33 +2,22 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Form Submission</title>
+
 </head>
 <body>
-    <h1>Submit Your Info</h1>
-    <form id="myForm">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <button type="submit">Submit</button>
+    <script src="script.js"></script>
+    <form id="data-form">
+        <h2>Submit Your Information</h2>
+
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Submit</button>
+
     </form>
 
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            if (!name || !email) {
-                alert('Both fields are required');
-            } else {
-                alert(`Name: ${name}, Email: ${email}`);
-            }
-        });
-    </script>
+
 </body>
 </html>
