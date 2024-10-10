@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend
+  name: frontend-service
+  namespace: frontend-namespace
 spec:
   type: LoadBalancer
   ports:
-    - port: 80
-      targetPort: 3000
+    - port: 80          # Port exposed externally
+      targetPort: 3000   # Port inside your pod (application port)
   selector:
     app: frontend
