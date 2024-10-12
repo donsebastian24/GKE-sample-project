@@ -137,4 +137,4 @@ the frontend, backend, and Kubernetes deployment in action
 Author
 Don Sebastian
 
-GitHub: [Your GitHub Profile Link]
+GitHub: https://github.com/donsebastian24
